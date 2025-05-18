@@ -29,7 +29,12 @@
       text-align:center;
       padding:2rem;
     }
-    header img{width:160px;height:auto;margin-bottom:2rem}
+    /* logo responsive width */
+    header img{
+      width:clamp(200px,30vw,320px);
+      height:auto;
+      margin-bottom:2rem;
+    }
     h1{
       font-size:2.5rem;
       font-weight:600;
@@ -63,8 +68,8 @@
 </head>
 <body>
   <header>
-    <!-- Word‑mark logo converted to PNG for GitHub Pages -->
-    <img src="qso_logo.png" alt="QSO GO logo">
+    <!-- Dynamically scaled SVG word‑mark (add qsogo-wordmark.svg to repo root) -->
+    <img src="qsogo-wordmark.svg" alt="QSO GO logo">
   </header>
 
   <h1>Local intel you can act on.</h1>
